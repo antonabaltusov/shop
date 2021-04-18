@@ -1,0 +1,169 @@
+.registration__top {
+    background: #F8F3F4;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.registration__top-heading {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+
+.registration__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+legend {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+[type="text"],
+[type="email"],
+[type="password"] {
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    margin-top: 20px;
+    padding-left: 17px;
+    
+}
+
+.registration__input::-webkit-input-placeholder {
+    font-weight: 1000;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registration__input::-moz-placeholder {
+    font-weight: 310000;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registration__input:-moz-placeholder {
+    font-weight: 10000;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registration__input:-ms-input-placeholder {
+    font-weight: 31100;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.label {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin: 0 47px 0 0;
+    position: relative;
+}
+
+.label-male {
+    margin-left: 27px;
+}
+
+.label:after {
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+}
+
+[type="radio"] {
+    display: none;
+}
+
+[type="radio"]:checked+.label:after{
+    background: black;
+}
+
+.gender-radio {
+    margin: 33px 0 33px 0;
+}
+
+.password-text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    width: 360px;
+    margin: 15px 0 39px 0;
+}
+
+.registration-submit {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    border-style: none;
+    width: 167px;
+    height: 50px;
+    padding: 16px 66px 16px 29px;
+    margin-bottom: 96px;
+    position: relative;
+}
+
+.registration-submit:after {
+    content: '';
+    background-image: url('../img/icon-button.svg');
+    position: absolute;
+    position: unset;
+    right: 29px;
+    width: 17px;
+    height: 10px;
+}
+
+.registration__privilege {
+    width: 652px;
+}
+
+.privilege__heading {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.privilege__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.privilege__item {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+    position: relative;
+}
+.privilege__item:before {
+    background-image: url('../img/ok.png');
+    position: absolute;
+    right: -43px;
+}
