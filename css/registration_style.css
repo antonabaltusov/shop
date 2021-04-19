@@ -125,12 +125,12 @@ legend {
 
 .registration-submit:after {
     content: '';
-    background-image: url('../img/icon-button.svg');
-    position: absolute;
-    position: unset;
-    right: 29px;
     width: 17px;
     height: 10px;
+    background-image: url('../img/icon-button.svg');
+    position: absolute;
+    right: 29px;
+    top: 20px;
 }
 
 .registration__privilege {
@@ -160,10 +160,16 @@ legend {
     line-height: 29px;
     color: #000000;
     margin-bottom: 16px;
+    margin-left: 43px;
     position: relative;
 }
 .privilege__item:before {
-    background-image: url('../img/ok.png');
+    content: '';
+    width: 20px;
+    height: 16px;
+    background-image: url('../img/ok.svg');
     position: absolute;
-    right: -43px;
+    left: -43px;
+    top: 6px;
 }
+ 
