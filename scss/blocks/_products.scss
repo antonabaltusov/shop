@@ -1,0 +1,133 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        margin-bottom: 6px;
+        }
+    
+    &__text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        margin-bottom: 48px;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        width: 360px;
+        background-color: $grey;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        &-box {
+            position: relative;
+        }
+
+        &-overlay {
+            position: absolute;
+            background: rgba(58, 56, 56, 0.86);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            display: none;
+        }
+
+        &:hover {
+            .products__item-overlay{
+                display: block;
+            } 
+            .products__item-button{
+                display: block;
+            }
+        }
+
+        &-heading {
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #000000;
+            margin: 25px 0 13px 18px;
+            text-transform: uppercase;
+        }
+        
+        &-text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5D5D5D;
+            margin: 0 18px 18px 18px;
+        }
+        
+        &-price {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            color: #F16D7F;
+            margin: 0 0 18px 18px;
+        }
+        
+        &-button {
+            width: 138px;
+            height: 43px;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: white;
+            border: 1px solid #FFFFFF;
+            background-color: transparent;
+            padding: 14px 15px 13px 50px;
+            
+            &-box-svg {
+                position: relative;
+            }
+
+            &-svg {
+                position: absolute;
+                top: -5px;
+                left: -40px;
+            }
+        }
+    }
+     
+    &__button {
+        padding: 14px 39px;
+        border: 1px solid #FF6A6A;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FF6A6A;
+        margin: 19px 0 49px 0;
+        background-color: white;
+
+        &:hover {
+            background-color:#F16D7F;
+            color: white;
+        }
+
+        &:active {
+            border: 1px solid #FF6A6A;
+            background-color:white;
+            color: #FF6A6A;
+            outline-width: 0px;
+        }
+    }
+}
+

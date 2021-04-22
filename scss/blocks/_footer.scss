@@ -1,0 +1,32 @@
+.footer {
+    background-color: #222224;
+
+    &-container {
+        min-height: 79px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    &__link {
+        &-svg {
+            fill: white;
+
+            &:hover {
+                fill: #F16D7F;
+            }
+
+            &:active {
+                fill: white;
+            }
+        }
+    }
+}
+

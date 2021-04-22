@@ -1,0 +1,42 @@
+.promo {
+    display: flex;
+    margin: 0 0 63px;
+    
+    &__heading {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: uppercase;
+        position: relative;
+
+        &-wrapper {
+            background-color: pink;
+            flex-grow: 1;
+            align-items: center;
+            display: flex;
+            padding: 0 0 0 92px;
+        }
+
+        &:before {
+            content: '';
+            width: 12px;
+            height: 98px;
+            background: #F16D7F;
+            position: absolute;
+            left: -28px;
+          }
+    }
+    
+    &__sub-heading {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        display: block;
+
+        &-pink {
+            color: $dark-pink;
+        }
+    }
+}
+
