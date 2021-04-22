@@ -128,12 +128,12 @@ body {
   fill: #F16D7D;
 }
 
-.header__button:hover .header__navigation {
-  display: block;
+.header__button:hover, .header__button:active {
+  outline-width: 0px;
 }
 
-.header__button:hover, .header__button:focus {
-  outline-width: 0px;
+.header__button:hover .navigation, .header__button:active .navigation {
+  display: block;
 }
 
 .header__link {
@@ -151,6 +151,84 @@ body {
 
 .header__button:hover + .header__navigation {
   display: block;
+}
+
+.navigation {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 232px;
+  height: 765px;
+  background-color: white;
+  padding: 0 0 0 34px;
+}
+
+.navigation__box {
+  height: 37px;
+  width: 232px;
+  position: relative;
+}
+
+.navigation__box-button {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  fill: "#6F6E6E";
+}
+
+.navigation__box-button:hover {
+  fill: #F16D7D;
+}
+
+.navigation__box-button:active .navigation {
+  display: none;
+}
+
+.navigation__tittle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.navigation__item-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin: 9px 0 12px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation__item-link:hover {
+  color: black;
+}
+
+.navigation__item-link:active {
+  color: #F16D7F;
+}
+
+.navigation-item__sub-item {
+  margin: 0 0 11px 0;
+}
+
+.navigation-item__sub-item-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.navigation-item__sub-item-link:hover {
+  color: #F16D7F;
+}
+
+.navigation-item__sub-item-link:active {
+  color: #6F6E6E;
 }
 
 .promo {

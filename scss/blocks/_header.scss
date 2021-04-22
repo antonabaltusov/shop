@@ -48,15 +48,14 @@
             .header__button-svg {
             fill: $dark-pink;
             }
-
-            .header__navigation {//почему то не срабатывает
-                display: block;
-            }
         }
         
         &:hover,
-        &:focus {
+        &:active {
             outline-width: 0px;
+            .navigation {//почему то не срабатывает
+                display: block;
+            }
         }
     }
     
@@ -77,4 +76,3 @@
         display: block;
     }
 }
-
