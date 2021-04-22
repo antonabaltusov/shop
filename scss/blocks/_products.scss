@@ -4,19 +4,13 @@
     align-items: center;
 
     &__heading {
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 36px;
-        color: #222222;
-        margin-bottom: 6px;
+        @include font(#222222,normal,30px,36px);
+        margin:0 0 6px 0;
         }
     
     &__text {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #9F9F9F;
-        margin-bottom: 48px;
+        @include font(#9F9F9F);
+        margin:0 0 48px 0;
     }
     
     &__list {
@@ -55,27 +49,18 @@
         }
 
         &-heading {
-            font-size: 13px;
-            line-height: 16px;
-            font-weight: 400;
-            color: #000000;
+            @include font(black,400,13px,16px);
             margin: 25px 0 13px 18px;
             text-transform: uppercase;
         }
         
         &-text {
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
-            color: #5D5D5D;
+            @include font(#5D5D5D,300);
             margin: 0 18px 18px 18px;
         }
         
         &-price {
-            font-size: 16px;
-            line-height: 19px;
-            font-weight: 400;
-            color: #F16D7F;
+            @include font($pink,400,16px,19px);
             margin: 0 0 18px 18px;
         }
         
@@ -87,10 +72,7 @@
             top: 50%;
             left: 50%;
             transform:translate(-50%, -50%);
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 17px;
-            color: white;
+            @include font(white,normal);
             border: 1px solid #FFFFFF;
             background-color: transparent;
             padding: 14px 15px 13px 50px;
@@ -110,10 +92,7 @@
     &__button {
         padding: 14px 39px;
         border: 1px solid #FF6A6A;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FF6A6A;
+        @include font(#FF6A6A,400,16px,19px);
         margin: 19px 0 49px 0;
         background-color: white;
 

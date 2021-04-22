@@ -15,19 +15,13 @@
         align-items: center;
 
         &-heading {
+            @include font(#FBFBFB,normal,19px,24px);
             margin: 28px 0 16px 0;
-            font-weight: normal;
-            font-size: 19.96px;
-            line-height: 24px;
-            color: #FBFBFB;
         }
         
         &-text {
-            font-weight: 300;
-            font-size: 13.972px;
-            line-height: 17px;
+            @include font(#FBFBFB,300,14px,17px);
             text-align: center;
-            color: #FBFBFB;
         }
     }
 

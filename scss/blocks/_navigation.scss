@@ -31,19 +31,13 @@
     }
 
     &__tittle {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000;
+        @include font(#000000,bold);
         margin: 0 0 15px 0;
         text-transform: uppercase;
     }
 
     &__item-link {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #F16D7F;
+        @include font($pink);
         margin: 9px 0 12px 0;
         text-decoration: none;
         text-transform: uppercase;
@@ -53,7 +47,7 @@
         }
 
         &:active {
-            color: #F16D7F;
+            color: $pink;
         }
     }
 
@@ -62,14 +56,11 @@
     }
 
     &-item__sub-item-link {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
+        @include font(#6F6E6E);
         text-decoration: none;
 
         &:hover {
-            color: #F16D7F;
+            color: $pink;
         }
 
         &:active {

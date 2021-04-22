@@ -9,10 +9,7 @@
     }
     
     &__text {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FBFBFB;
+        @include font(white,normal,16px,19px);
     }
 
     &__link {

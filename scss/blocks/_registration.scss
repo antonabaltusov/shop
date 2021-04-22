@@ -3,10 +3,7 @@
     justify-content: space-between;
 
     legend {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: #222222;
+        @include font(#222222,300,16px,19px);
     }
     
     .registration__input {
@@ -23,31 +20,19 @@
         }
 
         &::-webkit-input-placeholder {
-            font-weight: 1000;
-            font-size: 13px;
-            line-height: 16px;
-            color: #B1B1B1;
+            @include font(#B1B1B1,300,13px,16px);
         }
         
         &::-moz-placeholder {
-            font-weight: 310000;
-            font-size: 13px;
-            line-height: 16px;
-            color: #B1B1B1;
+            @include font(#B1B1B1,300,13px,16px);
         }
         
         &:-moz-placeholder {
-            font-weight: 10000;
-            font-size: 13px;
-            line-height: 16px;
-            color: #B1B1B1;
+            @include font(#B1B1B1,300,13px,16px);
         }
         
         &:-ms-input-placeholder {
-            font-weight: 31100;
-            font-size: 13px;
-            line-height: 16px;
-            color: #B1B1B1;
+            @include font(#B1B1B1,300,13px,16px);
         }
     }
     
@@ -63,10 +48,7 @@
         }
 
         .label {
-            font-weight: 300;
-            font-size: 11px;
-            line-height: 13px;
-            color: #000000;
+            @include font(black,300,11px,13px);
             margin: 0 47px 0 0;
             position: relative;
     
@@ -87,19 +69,13 @@
     }
     
     .password-text {
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 16px;
-        color: #B1B1B1;
+        @include font(#B1B1B1,300,13px,16px);
         width: 360px;
         margin: 15px 0 39px 0;
     }
     
     &-submit {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
+        @include font();
         background-color: #F16D7F;
         border-style: none;
         width: 167px;
@@ -158,27 +134,18 @@
         width: 652px;
 
         &__heading {
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
+            @include font(black,300,24px,29px);
             text-transform: uppercase;
             margin-bottom: 22px;
         }
         
         &__text {
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
+            @include font(black,300,24px,29px);
             margin-bottom: 22px;
         }
         
         &__item {
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
+            @include font(black,300,24px,29px);
             margin-bottom: 16px;
             margin-left: 43px;
             position: relative;

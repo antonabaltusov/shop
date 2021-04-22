@@ -185,6 +185,7 @@ body {
 }
 
 .navigation__tittle {
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -194,6 +195,7 @@ body {
 }
 
 .navigation__item-link {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -216,6 +218,7 @@ body {
 }
 
 .navigation-item__sub-item-link {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -237,9 +240,11 @@ body {
 }
 
 .promo__heading {
-  font-size: 48px;
+  font-style: normal;
   font-weight: 900;
+  font-size: 48px;
   line-height: 58px;
+  color: black;
   text-transform: uppercase;
   position: relative;
 }
@@ -262,10 +267,11 @@ body {
 }
 
 .promo__sub-heading {
-  font-size: 32px;
   font-style: normal;
   font-weight: 700;
+  font-size: 32px;
   line-height: 38px;
+  color: black;
   display: block;
 }
 
@@ -312,19 +318,23 @@ body {
 }
 
 .categories__item-text {
-  font-size: 16px;
+  font-style: normal;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
   text-align: center;
-  color: white;
   text-transform: uppercase;
 }
 
 .categories__item-heading {
+  font-style: normal;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
+  color: #F16D7D;
   letter-spacing: 0em;
   text-align: center;
-  color: #F16D7D;
   text-transform: uppercase;
 }
 
@@ -335,19 +345,21 @@ body {
 }
 
 .products__heading {
+  font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 36px;
   color: #222222;
-  margin-bottom: 6px;
+  margin: 0 0 6px 0;
 }
 
 .products__text {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
-  margin-bottom: 48px;
+  margin: 0 0 48px 0;
 }
 
 .products__list {
@@ -386,15 +398,17 @@ body {
 }
 
 .products__item-heading {
+  font-style: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 400;
-  color: #000000;
+  color: black;
   margin: 25px 0 13px 18px;
   text-transform: uppercase;
 }
 
 .products__item-text {
+  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -403,9 +417,10 @@ body {
 }
 
 .products__item-price {
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-weight: 400;
   color: #F16D7F;
   margin: 0 0 18px 18px;
 }
@@ -418,6 +433,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -440,6 +456,7 @@ body {
 .products__button {
   padding: 14px 39px;
   border: 1px solid #FF6A6A;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -479,19 +496,21 @@ body {
 }
 
 .advantages__item-heading {
-  margin: 28px 0 16px 0;
+  font-style: normal;
   font-weight: normal;
-  font-size: 19.96px;
+  font-size: 19px;
   line-height: 24px;
   color: #FBFBFB;
+  margin: 28px 0 16px 0;
 }
 
 .advantages__item-text {
+  font-style: normal;
   font-weight: 300;
-  font-size: 13.972px;
+  font-size: 14px;
   line-height: 17px;
-  text-align: center;
   color: #FBFBFB;
+  text-align: center;
 }
 
 .advantages__img {
@@ -617,10 +636,11 @@ body {
 }
 
 .footer__text {
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #FBFBFB;
+  color: white;
 }
 
 .footer__link-svg {
@@ -644,6 +664,7 @@ body {
 }
 
 .tittle__heading {
+  font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
@@ -657,6 +678,7 @@ body {
 }
 
 .registration legend {
+  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -677,28 +699,32 @@ body {
 }
 
 .registration .registration__input::-webkit-input-placeholder {
-  font-weight: 1000;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
 }
 
 .registration .registration__input::-moz-placeholder {
-  font-weight: 310000;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
 }
 
 .registration .registration__input:-moz-placeholder {
-  font-weight: 10000;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
 }
 
 .registration .registration__input:-ms-input-placeholder {
-  font-weight: 31100;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
@@ -717,10 +743,11 @@ body {
 }
 
 .registration .gender-radio .label {
+  font-style: normal;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
-  color: #000000;
+  color: black;
   margin: 0 47px 0 0;
   position: relative;
 }
@@ -740,6 +767,7 @@ body {
 }
 
 .registration .password-text {
+  font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
@@ -749,10 +777,11 @@ body {
 }
 
 .registration-submit {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: white;
   background-color: #F16D7F;
   border-style: none;
   width: 167px;
@@ -810,29 +839,32 @@ body {
 
 .registration__privilege__heading,
 .registration .privilege__heading {
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #000000;
+  color: black;
   text-transform: uppercase;
   margin-bottom: 22px;
 }
 
 .registration__privilege__text,
 .registration .privilege__text {
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #000000;
+  color: black;
   margin-bottom: 22px;
 }
 
 .registration__privilege__item,
 .registration .privilege__item {
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: #000000;
+  color: black;
   margin-bottom: 16px;
   margin-left: 43px;
   position: relative;
