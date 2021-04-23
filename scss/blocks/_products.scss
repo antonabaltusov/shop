@@ -65,7 +65,7 @@
         }
         
         &-button {
-            width: 138px;
+            width: 140px;
             height: 43px;
             position: absolute;
             display: none;
@@ -75,7 +75,7 @@
             @include font(white,normal);
             border: 1px solid #FFFFFF;
             background-color: transparent;
-            padding: 14px 15px 13px 50px;
+            padding: 14px 13px 13px 50px;
             
             &-box-svg {
                 position: relative;
