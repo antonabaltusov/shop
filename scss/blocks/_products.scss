@@ -1,0 +1,112 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        @include font(#222222,normal,30px,36px);
+        margin:0 0 6px 0;
+        }
+    
+    &__text {
+        @include font(#9F9F9F);
+        margin:0 0 48px 0;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        width: 360px;
+        background-color: $grey;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        &-box {
+            position: relative;
+        }
+
+        &-overlay {
+            position: absolute;
+            background: rgba(58, 56, 56, 0.86);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            display: none;
+        }
+
+        &:hover {
+            .products__item-overlay{
+                display: block;
+            } 
+            .products__item-button{
+                display: block;
+            }
+        }
+
+        &-heading {
+            @include font(black,400,13px,16px);
+            margin: 25px 0 13px 18px;
+            text-transform: uppercase;
+        }
+        
+        &-text {
+            @include font(#5D5D5D,300);
+            margin: 0 18px 18px 18px;
+        }
+        
+        &-price {
+            @include font($pink,400,16px,19px);
+            margin: 0 0 18px 18px;
+        }
+        
+        &-button {
+            width: 138px;
+            height: 43px;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            @include font(white,normal);
+            border: 1px solid #FFFFFF;
+            background-color: transparent;
+            padding: 14px 15px 13px 50px;
+            
+            &-box-svg {
+                position: relative;
+            }
+
+            &-svg {
+                position: absolute;
+                top: -5px;
+                left: -40px;
+            }
+        }
+    }
+     
+    &__button {
+        padding: 14px 39px;
+        border: 1px solid #FF6A6A;
+        @include font(#FF6A6A,400,16px,19px);
+        margin: 19px 0 49px 0;
+        background-color: white;
+
+        &:hover {
+            background-color:#F16D7F;
+            color: white;
+        }
+
+        &:active {
+            border: 1px solid #FF6A6A;
+            background-color:white;
+            color: #FF6A6A;
+            outline-width: 0px;
+        }
+    }
+}
+

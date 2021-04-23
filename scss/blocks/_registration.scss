@@ -1,0 +1,166 @@
+.registration {
+    display: flex;
+    justify-content: space-between;
+
+    legend {
+        @include font(#222222,300,16px,19px);
+    }
+    
+    .registration__input {
+        width: 360px;
+        height: 45px;
+        border: 1px solid #A4A4A4;
+        margin-top: 20px;
+        padding-left: 17px;
+
+        &:hover,
+        &:focus{
+            border: 1px solid #FF6A6A;
+            outline-width: 0px;
+        }
+
+        &::-webkit-input-placeholder {
+            @include font(#B1B1B1,300,13px,16px);
+        }
+        
+        &::-moz-placeholder {
+            @include font(#B1B1B1,300,13px,16px);
+        }
+        
+        &:-moz-placeholder {
+            @include font(#B1B1B1,300,13px,16px);
+        }
+        
+        &:-ms-input-placeholder {
+            @include font(#B1B1B1,300,13px,16px);
+        }
+    }
+    
+    .gender-radio {
+        margin: 33px 0 33px 0;
+
+        [type="radio"] {
+            display: none;
+
+            &:checked+.label:after{
+                background: black;
+            }
+        }
+
+        .label {
+            @include font(black,300,11px,13px);
+            margin: 0 47px 0 0;
+            position: relative;
+    
+            &-male {
+                margin-left: 27px;
+            }
+            
+            &:after {
+                content: '';
+                width: 17px;
+                height: 17px;
+                border: 1px solid #A4A4A4;
+                border-radius: 50%;
+                position: absolute;
+                left: -27px;
+            }
+        }
+    }
+    
+    .password-text {
+        @include font(#B1B1B1,300,13px,16px);
+        width: 360px;
+        margin: 15px 0 39px 0;
+    }
+    
+    &-submit {
+        @include font();
+        background-color: #F16D7F;
+        border-style: none;
+        width: 167px;
+        height: 50px;
+        padding: 16px 66px 16px 29px;
+        margin-bottom: 96px;
+        position: relative;
+
+        &:hover {
+            background-color:white;
+            color: #FF6A6A;
+            border: 1px solid #F16D7F;
+
+            .registration-submit:after {//не работает
+                display: none;
+                
+            }
+
+            .registration-submit:before {//не работает
+                display: block;
+                
+            }
+        }
+
+        &:active {
+            background-color:#F16D7F;
+            color: white;
+            outline-width: 0px;
+            
+        }
+
+        &:before {
+            display: none;
+            content: '';
+            width: 17px;
+            height: 10px;
+            background-image: url('../img/icon-button-pink.svg');
+            position: absolute;
+            right: 29px;
+            top: 20px;
+        }
+
+        &:after {
+            content: '';
+            width: 17px;
+            height: 10px;
+            background-image: url('../img/icon-button.svg');
+            position: absolute;
+            right: 29px;
+            top: 20px;
+        }
+    }
+    
+    &__privilege,
+    .privilege{
+        width: 652px;
+
+        &__heading {
+            @include font(black,300,24px,29px);
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+        
+        &__text {
+            @include font(black,300,24px,29px);
+            margin-bottom: 22px;
+        }
+        
+        &__item {
+            @include font(black,300,24px,29px);
+            margin-bottom: 16px;
+            margin-left: 43px;
+            position: relative;
+        }
+
+        &__item:before {
+            content: '';
+            width: 20px;
+            height: 16px;
+            background-image: url('../img/ok.svg');
+            position: absolute;
+            left: -43px;
+            top: 6px;
+        }
+    }
+}
+
+

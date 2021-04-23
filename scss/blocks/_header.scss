@@ -1,0 +1,78 @@
+.header {
+    background-color: $dark-blue;
+
+    &__wrapper {
+        min-height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__navigation {
+        display: none;
+
+        &:hover{
+            display: block;
+        }
+    }
+
+    &__search {
+        fill: #E8E8E8;
+
+        &:hover {
+            fill: $dark-pink;
+        }
+
+        &:active {
+            fill: #E8E8E8;
+        }
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+        fill: url(#pattern0);
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    
+    &__button {
+        border: none;
+        background-color: transparent;
+        fill: #E8E8E8;
+        height: 75px;
+
+        &:hover {
+            outline-width: 0px;
+            .header__button-svg {
+            fill: $dark-pink;
+            }
+        }
+        
+        &:hover,
+        &:active {
+            outline-width: 0px;
+            .navigation {//почему то не срабатывает
+                display: block;
+            }
+        }
+    }
+    
+    &__link {
+        margin: 0 0 0 34px;
+        fill: #E8E8E8;
+
+        &:hover{
+            fill: $dark-pink; 
+        }
+
+        &:active {
+            fill: #E8E8E8;
+        }
+    }
+
+    &__button:hover+.header__navigation {//и так тоже не работает
+        display: block;
+    }
+}

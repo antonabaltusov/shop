@@ -1,0 +1,108 @@
+.review {
+    background-image: url(../img/review-back.jpg);
+
+    .review--container{
+        min-height: 448px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .review__item {
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .review__text {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 30px;
+            color: #222224;
+        }
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__heading {
+            width: 557px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 167.2%;
+            text-align: center;
+            color: #222224;
+        }
+        
+        &__text {
+            font-weight: 400;
+            text-align: center;
+            color: #222224;
+            margin-bottom: 32px;
+        }
+        
+        &__form {
+            width: 307px;
+            height: 49px;
+            border-radius: 26px;
+            background: #E1E1E1;
+            border-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            input {
+                width: 307px;
+                height: 46px;
+                border-radius: 26px;
+                background: #E1E1E1;
+                margin-left: 0px;
+                border-style: none;
+                background-color: #E1E1E1;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                color: #222224;
+                opacity: 0.67;
+                padding-left: 22px;
+                
+                &:hover,
+                &:focus {
+                    border: 1px solid #FF6A6A;
+                    outline-width: 0px;
+                }
+            }
+            
+            &-button {
+                height: 49px;
+                width: 100px;
+                background: #F16D7F;
+                border-top-right-radius: 26px;
+                border-bottom-right-radius: 26px;
+                border-style: none;
+                font-size: 14px;
+                line-height: 17px;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                position: absolute;
+                right: 0;
+                
+
+                &:hover {
+                    background: #E05C6E;
+                }
+
+                &:active {
+                    background: #F16D7F;
+                }
+            }
+        }
+    }
+}
