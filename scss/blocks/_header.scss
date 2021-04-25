@@ -6,13 +6,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    
-    &__navigation {
-        display: none;
 
-        &:hover{
-            display: block;
+        &-nav {
+            position: relative;
         }
     }
 
@@ -42,18 +38,15 @@
         background-color: transparent;
         fill: #E8E8E8;
         height: 75px;
+        outline: none;
+        padding-bottom: 0;
 
         &:hover {
-            outline-width: 0px;
             .header__button-svg {
-            fill: $dark-pink;
+                fill: $dark-pink;
             }
-        }
-        
-        &:hover,
-        &:active {
-            outline-width: 0px;
-            .navigation {//почему то не срабатывает
+
+            +.navigation {
                 display: block;
             }
         }
@@ -70,9 +63,5 @@
         &:active {
             fill: #E8E8E8;
         }
-    }
-
-    &__button:hover+.header__navigation {//и так тоже не работает
-        display: block;
     }
 }

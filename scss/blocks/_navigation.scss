@@ -1,11 +1,16 @@
 .navigation {
-    display: block;
+    display: none;
     position: absolute;
-    right: 0;
+    left: 0;
     width: 232px;
     height: 765px;
     background-color: white;
     padding: 0 0 0 34px;
+    z-index: 1;
+
+    &:hover {
+            display: block;
+     }
 
     &__box {
         height: 37px;
@@ -16,14 +21,20 @@
             position: absolute;
             right: 16px;
             top: 16px;
-            fill: "#6F6E6E";
+            background-color: transparent;
+            border: none;
+            outline: none;
+            &-svg {
+                fill: #6F6E6E;
 
-            &:hover {
-                fill: $dark-pink;
+                &:hover {
+                        fill: $dark-pink;
+                }
             }
+            
 
             &:active {
-                .navigation {
+                +.navigation {
                     display: none;
                 }
             }
@@ -34,6 +45,8 @@
         @include font(#000000,bold);
         margin: 0 0 15px 0;
         text-transform: uppercase;
+
+        
     }
 
     &__item-link {
