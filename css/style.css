@@ -220,7 +220,7 @@ body {
   fill: #F16D7D;
 }
 
-.navigation__box-button:active + .navigation {
+.navigation__box-button:active + .navigation, .navigation__box-button:focus + .navigation {
   display: none;
 }
 
