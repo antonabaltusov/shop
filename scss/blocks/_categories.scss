@@ -1,5 +1,13 @@
 .categories {
-    margin-bottom: 97px;
+    margin:0 auto 67px;
+
+    @include tablet {
+        margin: 0 auto 135px;
+    }
+
+    @include mobile {
+        margin: 0 auto 32px;
+    }
 
    &__list {
         display: flex;
@@ -14,6 +22,20 @@
         flex-direction: column;
         justify-content:center;
         align-items: center;
+        margin: 0 0 30px;
+        background-size: cover;
+
+        @include tablet {
+            width: 32%;
+            min-height: 168px;
+            margin: 0 0 20px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+            margin: 0 0 32px;
+        }
 
         &--woman {
             background-image: url(../img/categories-woman.jpg);
@@ -30,8 +52,15 @@
         &--accessories {
             background-image: url(../img/categories-accesories.jpg);
             width: 100%;
-            margin-top: 30px;
             min-height: 180px;
+
+            @include tablet {
+                min-height: 116px;;
+            }
+
+            @include mobile {
+                min-height: 111px;
+            }
         }
         
         &-text {

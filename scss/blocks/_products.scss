@@ -15,16 +15,24 @@
     
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
     
     &__item {
         width: 360px;
         background-color: $grey;
-        margin-bottom: 30px;
+        margin:0 16px 30px 0;
         display: flex;
         flex-direction: column;
+
+        @include tablet {
+            margin:0 16px 16px 0;
+        }
+
+        @include mobile {
+            margin:0 0 16px;
+        }
 
         &-box {
             position: relative;
@@ -93,8 +101,16 @@
         padding: 14px 39px;
         border: 1px solid #FF6A6A;
         @include font(#FF6A6A,400,16px,19px);
-        margin: 19px 0 49px 0;
+        margin: 19px 0 95px 0;
         background-color: white;
+
+        @include tablet {
+            margin: 19px 0 65px 0;
+        }
+
+        @include mobile {
+            margin: 25px 0 110px 0;
+        }
 
         &:hover {
             background-color:#F16D7F;
