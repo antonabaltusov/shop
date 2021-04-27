@@ -1,24 +1,55 @@
 .promo {
     display: flex;
     margin: 0 0 63px;
+
+    @include tablet {
+        margin: 0 0 20px;
+    }
+
+    &__img {
+        width: 50%;
+        height: auto;
+
+        @include mobile {
+            display: none;
+        }
+    }
     
     &__heading {
         @include font(black,900,48px,58px);
+
+        @include tablet {
+            @include font(black,900, 44px, 52px);
+        }
+
+        @include mobile {
+            @include font(black,900, 38px, 46px);
+        }
+        
         text-transform: uppercase;
         position: relative;
 
         &-wrapper {
-            background-color: pink;
+            background-color: $light-pink;
             flex-grow: 1;
             align-items: center;
             display: flex;
             padding: 0 0 0 92px;
+
+            @include tablet {
+                padding: 0 0 0 9%;
+            }
+
+            @include mobile{
+                min-height: 363px;
+                padding: 0 0 0 22%;
+            }
         }
 
         &:before {
             content: '';
             width: 12px;
-            height: 98px;
+            height: 100%;
             background: #F16D7F;
             position: absolute;
             left: -28px;
@@ -28,6 +59,14 @@
     &__sub-heading {
         @include font(black,700,32px,38px);
         display: block;
+
+        @include tablet {
+            @include font(black, 700, 24px, 29px);
+        }
+
+        @include mobile {
+            @include font(black, 700,20px, 24px)
+        }
 
         &-pink {
             color: $dark-pink;

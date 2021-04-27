@@ -1,5 +1,6 @@
 .review {
     background-image: url(../img/review-back.jpg);
+    background-size: cover;
 
     .review--container{
         min-height: 448px;
@@ -7,20 +8,26 @@
         justify-content: space-between;
         align-items: center;
 
+        @include tablet {
+            flex-direction: column;
+            padding: 64px 0 219px;
+        }
+
+        @include mobile {
+            padding: 65px 0 110px;
+        }
+
         .review__item {
-            width: 360px;
+            max-width: 360px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         
         .review__text {
-            font-weight: normal;
-            font-size: 20px;
-            line-height: 24px;
+            @include font(#222224,400,20px,24px);
             text-align: center;
             margin-top: 30px;
-            color: #222224;
         }
     }
 
@@ -30,23 +37,27 @@
         align-items: center;
 
         &__heading {
-            width: 557px;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 167.2%;
+            @include font(#222224,bold,24px,167.2%);
+            max-width: 557px;
             text-align: center;
-            color: #222224;
         }
         
         &__text {
-            font-weight: 400;
+            @include font(#222224,400,14px,21px);
             text-align: center;
-            color: #222224;
-            margin-bottom: 32px;
+            margin:0 0 32px;
+
+            @include tablet {
+                margin:0 0 27px;
+            }
+
+            @include mobile {
+                margin:0 0 22px;
+            }
         }
         
         &__form {
-            width: 307px;
+            max-width: 307px;
             height: 49px;
             border-radius: 26px;
             background: #E1E1E1;
@@ -70,7 +81,7 @@
                 align-items: center;
                 color: #222224;
                 opacity: 0.67;
-                padding-left: 22px;
+                padding: 0 100px 0 22px;
                 
                 &:hover,
                 &:focus {

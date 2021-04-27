@@ -1,29 +1,46 @@
 .navigation {
-    display: block;
+    display: none;
     position: absolute;
-    right: 0;
-    width: 232px;
-    height: 765px;
+    left: 0px;
+    width: 100%;
+    height: max-content;
     background-color: white;
     padding: 0 0 0 34px;
+    z-index: 1;
+
+    @include mobile {
+        left: -232px;
+        width: 232px;
+    }
+
+    &:hover {
+            display: block;
+     }
 
     &__box {
         height: 37px;
-        width: 232px;
+        width: 100%;
         position: relative;
 
         &-button {
             position: absolute;
             right: 16px;
             top: 16px;
-            fill: "#6F6E6E";
+            background-color: transparent;
+            border: none;
+            outline: none;
+            &-svg {
+                fill: #6F6E6E;
 
-            &:hover {
-                fill: $dark-pink;
+                &:hover {
+                        fill: $dark-pink;
+                }
             }
+            
 
-            &:active {
-                .navigation {
+            &:active,
+            &:focus {
+                +.navigation {
                     display: none;
                 }
             }
@@ -34,6 +51,8 @@
         @include font(#000000,bold);
         margin: 0 0 15px 0;
         text-transform: uppercase;
+
+        
     }
 
     &__item-link {
@@ -52,7 +71,7 @@
     }
 
     &-item__sub-item {
-        margin: 0 0 11px 0;
+        margin: 0 0 11px 20px;
     }
 
     &-item__sub-item-link {
