@@ -3,7 +3,6 @@
     min-height: 148px;
     display: flex;
     align-items: center;
-    margin-bottom: 64px;
 
     &__heading {
         @include font($pink,normal,24px,29px);

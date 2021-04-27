@@ -883,7 +883,6 @@ body {
   min-height: 148px;
   display: flex;
   align-items: center;
-  margin-bottom: 64px;
 }
 
 .tittle__heading {
@@ -898,6 +897,7 @@ body {
 .registration {
   display: flex;
   justify-content: space-between;
+  margin-top: 64px;
 }
 
 .registration legend {
@@ -1084,5 +1084,20 @@ body {
   position: absolute;
   left: -43px;
   top: 6px;
+}
+
+.w-37 {
+  width: 37% !important;
+  margin: 0 auto;
+}
+
+.bg-grey {
+  background-color: #F7F7F7;
+}
+
+.description {
+  margin-top: -60px;
+  border: 1px solid #EAEAEA;
+  padding: 64px 0;
 }
 /*# sourceMappingURL=style.css.map */
