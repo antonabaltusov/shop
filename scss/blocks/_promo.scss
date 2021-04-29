@@ -31,7 +31,7 @@
 
         &-wrapper {
             background-color: $light-pink;
-            flex-grow: 1;
+            width: 50%;
             align-items: center;
             display: flex;
             padding: 0 0 0 92px;
@@ -41,6 +41,7 @@
             }
 
             @include mobile{
+                width: 100%;
                 min-height: 363px;
                 padding: 0 0 0 22%;
             }
