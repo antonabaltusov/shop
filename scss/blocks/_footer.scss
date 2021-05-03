@@ -18,9 +18,17 @@
         @include font(white,normal,16px,19px);
     }
 
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+
     &__link {
+        margin: 0 7px 0 0;
+
         &-svg {
             fill: white;
+            @include transition;
 
             &:hover {
                 fill: #F16D7F;

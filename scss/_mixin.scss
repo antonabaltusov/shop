@@ -17,3 +17,19 @@
         @content;
     }
 }
+
+@mixin prefix($function1, $function2) {
+    -moz-transition: $function2;
+    -webkit-transition: $function2;
+    -o-transition: $function2;
+    -ms-transition: $function2;
+    transition: $function2;
+}
+
+@mixin transition ($time: 500ms,$delay: 0ms) {
+    -moz-transition: all $time $delay;
+    -webkit-transition: all $time $delay;
+    -o-transition: all $time $delay;
+    -ms-transition: all $time $delay;
+    transition: all $time $delay;
+}

@@ -23,6 +23,7 @@
         @include font( #636363,300);
         text-transform:uppercase;
         text-decoration: none;
+        @include transition;
 
         &:hover {
             color: $dark-pink
@@ -30,6 +31,11 @@
 
         &:active {
             color: #636363;
+        }
+
+        &--slesh {
+            @include font( #636363,300);
+            text-transform:uppercase;
         }
     }
 
