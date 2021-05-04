@@ -1,9 +1,37 @@
 .tittle {
     background: #F8F3F4;
-    min-height: 148px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 64px;
+    height: 148px;
+    
+    @include mobile {
+        height: 78px;
+        padding: 24px 0 46px; 
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        @include mobile {
+            flex-direction: column;
+
+        }
+    }
+
+    &_links-item {
+        @include font( #636363,300);
+        text-transform:uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-pink
+        }
+
+        &:active {
+            color: #636363;
+        }
+    }
 
     &__heading {
         @include font($pink,normal,24px,29px);

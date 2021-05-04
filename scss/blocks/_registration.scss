@@ -1,6 +1,7 @@
 .registration {
     display: flex;
     justify-content: space-between;
+    margin-top: 64px;
 
     legend {
         @include font(#222222,300,16px,19px);
