@@ -1,0 +1,141 @@
+.cart {
+    display: flex;
+    justify-content: space-between;
+    margin: 96px auto 128px;
+
+    &__product {
+        &-item {
+            width: 652px;
+            height: 306px;
+            display: flex;
+            margin: 0 0 40px;
+            background-color: white;
+            filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+
+            &-name,
+            &-type {
+                @include font (#222222, normal, 24px,29px);
+                text-transform: uppercase;
+            }
+
+            &-price,
+            &-color,
+            &-size,
+            &-quantity {
+                @include font (#575757,normal,22px ,26px);
+                margin-bottom: 6px;
+
+                span {
+                    color: #6f6e6e;
+                }
+            }
+
+            &-quantity {
+                position: relative;
+
+                input {
+                    @include font (#656565, normal,18px,22px);
+                    position: absolute;
+                    bottom: 0;
+                    margin: 0 0 0 24px;
+                    // padding: 0 0 0 auto;
+                    border: 1px solid #EAEAEA;
+                    width: 44px;
+                    height: 25px;
+                    outline: none;
+                    text-align: center;
+                }
+            }
+
+            &-price {
+                margin: 42px 0 6px;
+
+                span {
+                    color: $pink
+                }
+            }
+        }
+
+        &-buttons {
+            margin: 72px 0 0;
+            display: flex;
+            justify-content: space-between;
+
+            &--item {
+                width: 235px;
+                height: 50px;
+                @include font (#000000,300);
+                text-transform: uppercase;
+                background-color: transparent;
+                border: 1px solid #A4A4A4;
+                outline: none;
+                @include transition;
+
+                &:hover {
+                    @include font ($dark-pink,400);
+                    background-color: transparent;
+                    border: 1px solid $dark-pink;
+                }
+    
+                &:active {
+                    @include font (#000000,300);
+                    background-color: transparent;
+                    border: 1px solid #A4A4A4;
+                }
+            }
+        }
+    }
+
+    &__discription {
+        width: 390px;
+        position: relative;
+        margin: 22px 22px 22px 31px;
+
+        &-button {
+            position: absolute;
+            top: 6px;
+            right: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+
+            &--svg {
+                fill:#575757;
+                @include transition;
+            }
+
+            &:hover {
+                .cart__discription-button--svg {
+                    fill: $dark-pink;
+                }
+            }
+
+            &:active {
+                .cart__discription-button--svg {
+                    fill: #575757;
+                }
+            }  
+        }
+    }
+
+    &__order {
+        legend {
+            text-transform: uppercase;
+            @include font (#222222,300,16px,19px);
+            margin: 0 0 20px;
+        }
+
+        &-input {
+            width: 360px;
+            height: 45px;
+            @include font (#222222,300,13px,16px);
+            border: 1px solid #A4A4A4;
+            margin: 0 0 21px;
+            padding: 0 17px;
+
+            &--city {
+                color: #B1B1B1;
+            }
+        }
+    }
+}
