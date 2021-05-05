@@ -40,6 +40,10 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobile {
+            width: 100%;
+        }
+
         &__heading {
             @include font(#222224,bold,24px,167.2%);
             max-width: 557px;
@@ -61,24 +65,18 @@
         }
         
         &__form {
-            max-width: 307px;
-            height: 49px;
-            border-radius: 26px;
-            background: #E1E1E1;
-            border-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             position: relative;
+            @include mobile {
+                width: 100%;
+            }
 
             input {
+                box-sizing: border-box;
                 width: 307px;
                 height: 46px;
                 border-radius: 26px;
                 background: #E1E1E1;
-                margin-left: 0px;
-                border-style: none;
-                background-color: #E1E1E1;
+                border: 1px solid #E1E1E1;
                 font-size: 14px;
                 line-height: 17px;
                 display: flex;
@@ -86,6 +84,12 @@
                 color: #222224;
                 opacity: 0.67;
                 padding: 0 100px 0 22px;
+                @include transition;
+
+                @include mobile {
+                    width: 100%;
+                    margin-right: 0;
+                }
                 
                 &:hover,
                 &:focus {
@@ -95,7 +99,7 @@
             }
             
             &-button {
-                height: 49px;
+                height: 48px;
                 width: 100px;
                 background: #F16D7F;
                 border-top-right-radius: 26px;
@@ -108,6 +112,9 @@
                 color: #FFFFFF;
                 position: absolute;
                 right: 0;
+                top:50%;
+                transform:translate(0, -50%);
+                @include transition;
                 
 
                 &:hover {

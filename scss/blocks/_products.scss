@@ -53,15 +53,6 @@
             display: none;
         }
 
-        &:hover {
-            .products__item-overlay{
-                display: block;
-            } 
-            .products__item-button{
-                display: block;
-            }
-        }
-
         &-heading {
             @include font(black,400,13px,16px);
             margin: 25px 0 13px 18px;
@@ -101,6 +92,14 @@
                 left: -40px;
             }
         }
+        &:hover {
+            .products__item-overlay{
+                display: block;
+            } 
+            .products__item-button{
+                display: block;
+            }
+        }
     }
      
     &__button {
@@ -109,6 +108,7 @@
         @include font(#FF6A6A,400,16px,19px);
         margin: 19px 0 95px 0;
         background-color: white;
+        @include transition();
 
         @include tablet {
             margin: 19px 0 65px 0;

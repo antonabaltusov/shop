@@ -1,5 +1,7 @@
 .header {
+    position: relative;
     background-color: $dark-blue;
+    z-index: 3;
     @include tablet {
         padding: 0 16px;
     }
@@ -16,11 +18,15 @@
 
         &-nav {
             position: relative;
+            display: flex;
+            align-items: center;
         }
     }
 
     &__search {
         fill: #E8E8E8;
+
+        @include transition();
 
         &:hover {
             fill: $dark-pink;
@@ -34,6 +40,7 @@
     &__logo {
         margin: 0 41px 0 0;
         fill: url(#pattern0);
+        @include transition();
 
         &:hover {
             opacity: 0.5;
@@ -43,12 +50,17 @@
     &__button {
         border: none;
         background-color: transparent;
-        fill: #E8E8E8;
         height: 75px;
         outline: none;
         padding-bottom: 0;
 
+        &-svg {
+            fill: #E8E8E8;
+            @include transition();
+        }
+
         &:hover {
+            
             .header__button-svg {
                 fill: $dark-pink;
             }
@@ -62,6 +74,7 @@
     &__link {
         margin: 0 0 0 34px;
         fill: #E8E8E8;
+        @include transition();
 
         &:hover{
             fill: $dark-pink; 
