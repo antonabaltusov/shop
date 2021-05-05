@@ -1,4 +1,21 @@
+@keyframes anim{
+    from {margin-top:-576px;}
+    to {margin-top:0;}
+    }
+    @-moz-keyframes anim{
+    from {margin-left:3px;}
+    to {margin-left:500px;}
+    }
+    @-webkit-keyframes anim{
+    from {margin-left:3px;}
+    to {margin-left:500px;}
+    }
+
+
 .navigation {
+    animation: anim 600ms;
+    -moz-animation:anim 600ms;
+    -webkit-animation:anim 600ms;
     display: none;
     position: absolute;
     left: 0px;
@@ -7,7 +24,7 @@
     height: max-content;
     background-color: white;
     padding: 0 0 0 34px;
-    z-index: 2;
+    z-index: 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
     @include mobile {

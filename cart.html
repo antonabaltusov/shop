@@ -143,8 +143,8 @@
                                         d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
                                 </svg>
                             </button>
-                            <h2 class="cart__product-item-name">mango people
-                                t-shirt</h2>
+                            <h2 class="cart__product-item-name">mango people</h2>
+                            <h3 class="cart__product-item-type">t-shirt</h3>
                             <p class="cart__product-item-price">Price: <span>$300</span></p>
                             <p class="cart__product-item-color">Color: <span>Red</span></p>
                             <p class="cart__product-item-size">Size: <span>Xl</span></p>
@@ -163,8 +163,8 @@
                                         d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
                                 </svg>
                             </button>
-                            <h2 class="cart__product-item-name">mango people
-                                t-shirt</h2>
+                            <h2 class="cart__product-item-name">mango people</h2>
+                            <h3 class="cart__product-item-type">t-shirt</h3>
                             <p class="cart__product-item-price">Price: <span>$300</span></p>
                             <p class="cart__product-item-color">Color: <span>Red</span></p>
                             <p class="cart__product-item-size">Size: <span>Xl</span></p>
@@ -174,12 +174,12 @@
                     </li>
                 </ul>
                 <div class="cart__product-buttons">
-                    <button class="cart__product-buttons--item">clear shopping cart</button>
-                    <button class="cart__product-buttons--item">continue shopping</button>
+                    <button class="cart__product-buttons--item">Clear shopping cart</button>
+                    <button class="cart__product-buttons--item">Continue shopping</button>
                 </div>
             </section>
             <form class="cart__order" action="">
-                <fieldset class="cart__order-fieldset--adress">
+                <fieldset class="cart__order-fieldset cart__order-fieldset--adress">
                     <legend>shipping adress</legend>
                     <p><input class="cart__order-input cart__order-input--city" type="text" name="" id=""
                             placeholder="Bangladesh"></p>
@@ -187,67 +187,14 @@
                     <p><input class="cart__order-input" type="text" name="" id="" placeholder="Postcode / Zip"></p>
                     <button class="cart__order-button" type="submit">get a quote</button>
                 </fieldset>
-                <fieldset class="cart__order-fieldset--price">
+                <fieldset class="cart__order-fieldset cart__order-fieldset--price">
                     <h3 class="cart__order-subtotal-price">sub total <span>$900</span></h3>
                     <h2 class="cart__order-total-price">grand total <span>$900</span></h2>
-                    <button type="submit">proceed to checkout</button>
+                    <div class="cart__order-hr"></div>
+                    <button class="cart__order-button--checkout" type="submit">proceed to checkout</button>
                 </fieldset>
             </form>
         </section>
-        <!-- <section class="registration container">
-            <form class="registration__form" action="">
-                <fieldset>
-                    <legend>Your Name</legend>
-                    <p>
-                        <input class="registration__input" type="text" id="FirstName" placeholder="First Name">
-                    </p>
-                    <p>
-                        <input class="registration__input" type="text" id="LastName" placeholder="Last Name">
-                    </p>
-                    <p class="gender-radio">
-                        <input type="radio" id="contactChoice1" name="gender" value="male">
-                        <label class="label label-male" for="contactChoice1">Male</label>
-
-                        <input type="radio" id="contactChoice2" name="gender" value="female">
-                        <label class="label" for="contactChoice2">Female</label>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Login details</legend>
-                    <p>
-                        <input class="registration__input" type="email" id="Email" placeholder="Email">
-                    </p>
-                    <p>
-                        <input class="registration__input" type="password" id="Password" placeholder="Password">
-                    </p>
-                    <p class="password-text">
-                        Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
-                        letters
-                    </p>
-                </fieldset>
-                <button class="registration__submit" type="submit">JOIN NOW
-                    <svg class="registration__submit-svg" width="17" height="10" viewBox="0 0 17 10"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" />
-                    </svg>
-                </button>
-            </form>
-            <section class="registration__privilege privilege">
-                <h2 class="privilege__heading">loyalty has its perks</h2>
-                <p class="privilege__text">Get in on the loyalty program where you can earn points and unlock serious
-                    perks. Starting with these as soon as you join:</p>
-                <ul>
-                    <li class="privilege__item">15% off welcome offer</li>
-                    <li class="privilege__item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="privilege__item">$10 off a purchase on your birthday</li>
-                    <li class="privilege__item">Early access to products</li>
-                    <li class="privilege__item">Exclusive offers & rewards</li>
-                </ul>
-            </section>
-        </section> -->
     </main>
     <footer>
         <section class="review">
@@ -263,10 +210,12 @@
                 <div class="subscribe">
                     <h2 class="subscribe__heading">SUBSCRIBE</h2>
                     <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
-                    <form action="" class="subscribe__form">
-                        <input type="email" name="" id="" placeholder="Enter Your Email">
-                        <button class="subscribe__form-button" type="submit">Subscribe</button>
-                    </form>
+                    <div class="subscribe__form">
+                        <form action="" class="subscribe__form">
+                            <input class="container" type="email" name="" id="" placeholder="Enter Your Email">
+                            <button class="subscribe__form-button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
