@@ -25,6 +25,10 @@
         display: flex;
         align-items: center;
 
+        @include tablet {
+            margin: 40px auto 64px;
+        }
+
         &-button {
             background-color: transparent;
             border: none;

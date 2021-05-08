@@ -2094,6 +2094,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1600px) {
+  .catalog__pagination {
+    margin: 40px auto 64px;
+  }
+}
+
 .catalog__pagination-button {
   background-color: transparent;
   border: none;
