@@ -175,12 +175,7 @@
             &:hover {
                 display: block;
             }
-
-            &:checked+.form__label:before{
-                    background: black;
-            }
             
-
             [type="radio"] {
                 display: none;
 
