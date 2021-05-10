@@ -18,13 +18,6 @@
     }
 }
 
-@mixin prefix($function1, $function2) {
-    -moz-transition: $function2;
-    -webkit-transition: $function2;
-    -o-transition: $function2;
-    -ms-transition: $function2;
-    transition: $function2;
-}
 
 @mixin transition ($time: 500ms,$delay: 0ms) {
     -moz-transition: all $time $delay;
@@ -39,4 +32,4 @@
     &:-moz-placeholder           { @content; }
     &::-moz-placeholder          { @content; }
     &:-ms-input-placeholder      { @content; }  
-  }
+}
